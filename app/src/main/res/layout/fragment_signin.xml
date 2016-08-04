@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="290dp"
+        android:id="@+id/imageView"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/start3"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:alpha="0"
+        android:id="@+id/username"
+        android:hint="Username"
+        android:layout_alignParentTop="true"
+        android:fitsSystemWindows  = "true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="Password"
+        android:id="@+id/password"
+        android:alpha="0"
+        android:fitsSystemWindows  = "true"
+        android:layout_below="@+id/username"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@+id/username"
+        android:layout_alignStart="@+id/username" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:alpha="0"
+        android:id="@+id/signin"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/signin_progressbar"
+        android:visibility="gone"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="MCChang\nSchool of\n  Learnin"
+        android:textSize="40sp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/startup_text"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

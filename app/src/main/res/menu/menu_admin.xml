@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.owner.edp.ActivityAdmin">
+
+    <item
+        android:id="@+id/create_user"
+        android:title="Create New User"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/delete_user"
+        android:title="Delete a Student"
+        android:orderInCategory="200"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/create_course"
+        android:title="Add New Course"
+        android:orderInCategory="300"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/create_course_section"
+        android:title="Create a Course/Section"
+        android:orderInCategory="400"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/create_course_student"
+        android:title="Create a Course/Student"
+        android:orderInCategory="500"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/sign_out"
+        android:title="Sign Out"
+        android:orderInCategory="600"
+        app:showAsAction="never" />
+
+</menu>

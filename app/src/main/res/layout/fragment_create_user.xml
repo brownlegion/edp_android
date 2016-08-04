@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:isScrollContainer="true"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:id="@+id/et_username"
+        android:layout_alignParentTop="true"
+        android:fitsSystemWindows  = "true"
+        android:layout_centerHorizontal="true"
+        android:hint="Username" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/et_firstname"
+        android:layout_below="@+id/et_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fitsSystemWindows  = "true"
+        android:hint="First Name" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/et_lastname"
+        android:layout_below="@+id/et_firstname"
+        android:fitsSystemWindows  = "true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:hint="Last Name" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:id="@+id/et_password"
+        android:layout_below="@+id/et_username"
+        android:layout_centerHorizontal="true"
+        android:fitsSystemWindows  = "true"
+        android:layout_marginTop="30dp"
+        android:hint="Password" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add User"
+        android:id="@+id/submit_user"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/rg_role"
+        android:layout_marginTop="30dp"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/rg_role"
+        android:layout_marginTop="30dp"
+        android:id="@+id/progess_bar_create_user"
+        android:visibility="gone"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:id="@+id/rg_role"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_lastname"
+        android:contentDescription="radio_role"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Professor"
+            android:id="@+id/radio_prof" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TA"
+            android:id="@+id/radio_ta" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student"
+            android:id="@+id/radio_student" />
+
+    </RadioGroup>
+
+</RelativeLayout>
